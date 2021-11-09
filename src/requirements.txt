@@ -2,4 +2,3 @@ pycaret
 streamlit
 pandas
 numpy
-git lfs
