@@ -99,7 +99,7 @@ class StreamlitApp:
             input_df = pd.DataFrame([input_dict], index=[0])
             output = self.model.predict(input_df)
             #revstring = predict_model(self.model, data=input_df)
-            st.success('Predicted revenue: {revenue:,.0f}'.format(revenue = output[0]).replace(",", " "))
+            st.success('Predicted revenue: {revenue:,.2f}$ million'.format(revenue = output[0]/1000000).replace(",", " "))
 
 
 
