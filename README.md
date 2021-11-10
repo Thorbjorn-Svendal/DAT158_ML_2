@@ -11,7 +11,7 @@
 - If you do not have pip you can download it here: https://pip.pypa.io/en/stable/installation/
 
 ## Running on localhost using Anaconda
-- Make an Anaconda environment. If you dont have Anaconda you can download it here: https://docs.anaconda.com/anaconda/install/windows/
+- Make an Anaconda environment
 - Make sure your environment contains numpy, pycaret, streamlit, pandas and pathlib
 - Clone project into the folder Anaconda defaults to and name the folder DAT158_ML_2
 - Run Anaconda and go to your environment
