@@ -12,4 +12,8 @@
 ## Running the deployed app
 - The deployed app can be found here: https://share.streamlit.io/h586636/dat158_ml_2/main/src/boxofficeapp.py
 
-
+##Using the app
+- Input the data you have into the correct fields
+- If you do not have data for all fields you can leave them empty
+- Click the "Predict" button at the bottom of your window
+- You now have a prediction of your movie's revenue
