@@ -18,7 +18,7 @@
 - Run Anaconda and go to your environment
 - Navigate to the project source folder using the command `cd DAT158_ML_2/src`
 - Run the command `streamlit run boxofficeapp.py`
-- The app should open in your default browser. If not the address link is put out in the Anaconda prompt
+- The app should open in your default browser. If not the link address is printed in the Anaconda prompt
 
 ## Running the deployed app
 - The deployed app can be found here: https://share.streamlit.io/h586636/dat158_ml_2/main/src/boxofficeapp.py
