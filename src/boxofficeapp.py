@@ -37,7 +37,8 @@ class StreamlitApp:
             output_df.to_csv(self.save_fn, index=False) 
         
     def run(self):
-        image = Image.open('movie.jpg')
+        img_path = Path(__file__).parents[1] / 'src/movie'
+        image = Image.open(img_path)
         image.resize = (200, 200)
         st.image(image, use_column_width=True)
 
