@@ -20,7 +20,7 @@ import os
 class StreamlitApp:
     
     def __init__(self):
-        pkl_path = Path(__file__).parents[1] / 'src/BoxOfficeModel.pkl'
+        pkl_path = Path(__file__).parents[1] / 'src/BoxOfficeModel'
         self.model = load_model(pkl_path)
         self.save_fn = 'path.csv'  
 
