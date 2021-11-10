@@ -1,5 +1,7 @@
 # DAT158_ML_2
 
+## We chose to work with the Box Office Prediction dataset found here: https://www.kaggle.com/c/tmdb-box-office-prediction
+
 ## Installations
 - Anaconda: https://docs.anaconda.com/anaconda/install/windows/
 - Anaconda pandas install: https://anaconda.org/anaconda/pandas
