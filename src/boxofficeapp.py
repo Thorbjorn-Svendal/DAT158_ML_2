@@ -6,13 +6,6 @@ import streamlit as st
 from PIL import Image
 import os
 
-from pycaret.regression import load_model, predict_model 
-import pandas as pd 
-import numpy as np
-import streamlit as st
-from PIL import Image
-import os
-
 class StreamlitApp:
     
     def __init__(self):
