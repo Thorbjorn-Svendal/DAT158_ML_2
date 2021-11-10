@@ -1,7 +1,17 @@
 # DAT158_ML_2
 
+## Installations
+- Anaconda: https://docs.anaconda.com/anaconda/install/windows/
+- Anaconda pandas install: https://anaconda.org/anaconda/pandas
+- Anaconda numpy install: https://anaconda.org/anaconda/numpy
+- Anaconda pycaret install: https://anaconda.org/conda-forge/pycaret
+- Anaconda pathlib install: https://anaconda.org/anaconda/pathlib
+- Anaconda streamlit install: https://anaconda.org/conda-forge/streamlit
+- All the extensions can also be installed using pip by simply typing pip install exstensionname while in your Anaconda environment prompt
+- If you do not have pip you can download it here: https://pip.pypa.io/en/stable/installation/
+
 ## Running on localhost using Anaconda
-- Make an Anaconda environment
+- Make an Anaconda environment. If you dont have Anaconda you can download it here: https://docs.anaconda.com/anaconda/install/windows/
 - Make sure your environment contains numpy, pycaret, streamlit, pandas and pathlib
 - Clone project into the folder Anaconda defaults to and name the folder DAT158_ML_2
 - Run Anaconda and go to your environment
