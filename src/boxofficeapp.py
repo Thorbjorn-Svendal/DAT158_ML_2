@@ -6,10 +6,6 @@ import streamlit as st
 from PIL import Image
 import os
 
-#from google.colab import drive
-#drive.mount('/content/drive')
-
-
 from pycaret.regression import load_model, predict_model 
 import pandas as pd 
 import numpy as np
@@ -50,7 +46,6 @@ class StreamlitApp:
         for i in range (len(genres)):
             genres[i] =  "'name' :'" + genres[i]
 
-        #jsonGenres = json.dumps(genres)
         budget = st.number_input('Budget', step=100000)
 
         collection = st.checkbox("Part of a collection: ")
@@ -81,27 +76,23 @@ class StreamlitApp:
         if crew2 is not None:
             crewlist.append(crew2)
 
-        #revstring = ""
+    
         keyword = st.text_input("Plot keyword")
         language = st.selectbox("Language spoken", ['English', 'Other'])
         runtime = st.number_input('Runtime in minutes', step=1)
         date = st.date_input("Release date")
-        #st.button("Calculate")
-        #st.info(revstring)
-        #st.info(collectionBool)
         original_language = st.selectbox("Original Language", ['en', 'other'])
         popularity = st.slider("Expected Popularity", 0,100,50)
         production_country = st.text_input("Production Country")
         status = st.selectbox("Released", ['1','0'])
 
-        #revstring = "Calculated revenue :"
+       
 
         output = None
-        if st.button("Calculate", 12021241):
+        if st.button("Calculate"):
             input_dict = {'budget':budget, 'genres':genres, 'belongs_to_collection': collectionBool, 'status': status, 'crew': crew, 'cast': cast, 'original_language': original_language, 'Keywords': keyword, 'spoken_languages': original_language, 'production_countries': production_country, 'original_title': title, 'production_companies': production_comp, 'popularity': popularity, 'runtime': runtime, 'release_date': date }
             input_df = pd.DataFrame([input_dict], index=[0])
             output = self.model.predict(input_df)
-            #revstring = predict_model(self.model, data=input_df)
             st.success('Predicted revenue: {revenue:,.2f}$ million'.format(revenue = output[0]/1000000).replace(",", " "))
 
 
