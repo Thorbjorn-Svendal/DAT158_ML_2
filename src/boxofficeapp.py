@@ -19,7 +19,8 @@ import os
 class StreamlitApp:
     
     def __init__(self):
-        self.model = load_model('BoxOfficeModel')
+        pkl_path = Path(__file__).parents[1] / 'src/BoxOfficeModel.pkl'
+        self.model = load_model(pkl_path)
         self.save_fn = 'path.csv'  
 
     def predict(self, input_data):
